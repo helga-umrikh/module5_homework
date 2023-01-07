@@ -1,5 +1,10 @@
-dollar = prompt('Please enter your dollar amount');
+a = prompt('Please enter your value');
+a = +a;
 
-dolRub_exch_rate = dollar * 72;
-
-alert('Your ending amount is: ' + dolRub_exch_rate);
+if (typeof(a) == NaN) {
+    alert(a + " is not a number!");
+} else if (a % 2 === 0) {
+    alert(a + ' is an integer number');
+} else if (a % 2 !== 0) {
+    alert(a + ' is an odd number');
+}
